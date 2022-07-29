@@ -1,38 +1,91 @@
 .App {
   text-align: center;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-header {
+  font-weight: 900;
+  font-size: 48px;
+  color: #666666
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-weight: 700;
+  color: #333333
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.game-item-row {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
 }
 
-.App-link {
-  color: #61dafb;
+.game-item-row + .game-item-row {
+  border-width: 0 1px 1px 1px ;
+  border-style: solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-item-col {
+  text-align: start;
+  padding: 5px;
+}
+
+.game-item-col + .game-item-col {
+  border-style: solid;
+  border-width: 0 0 0 1px;
+}
+
+.playerBgColor0 {
+  background-color: yellowgreen;
+}
+
+.playerBgColor1 {
+  background-color: forestgreen;
+}
+
+.playerBgColor2 {
+  background-color: crimson;
+}
+
+.playerBgColor3 {
+  background-color: darkgoldenrod;
+}
+
+.playerBgColor4 {
+  background-color: orchid;
+}
+
+.playerBgColor5 {
+  background-color: saddlebrown;
+}
+
+.playerTextColor0 {
+  color: yellowgreen;
+  font-weight: 600;
+}
+
+.playerTextColor1 {
+  color: forestgreen;
+  font-weight: 600;
+}
+
+.playerTextColor2 {
+  color: crimson;
+  font-weight: 600;
+}
+
+.playerTextColor3 {
+  color: darkgoldenrod;
+  font-weight: 600;
+}
+
+.playerTextColor4 {
+  color: orchid;
+  font-weight: 600;
+}
+
+.playerTextColor5 {
+  color: saddlebrown;
+  font-weight: 600;
 }
